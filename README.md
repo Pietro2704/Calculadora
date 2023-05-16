@@ -1,2 +1,4 @@
-# Calculadora
- Projeto nível iniciante de uma calculadora em Javascript
+# Projeto nível iniciante:
+## Calculadora em Javascript
+
+
