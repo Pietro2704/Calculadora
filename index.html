@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculadora</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="card">
+
+    <input type="text" name="painel" id="painel">
+
+    <div class="controller">
+      <div onclick="Limpar()" class="outro" id="C">C</div>
+      <div onclick="Porcentagem()" class="outro" id="porcento">%</div>
+      <div onclick="Apagar()" class="outro" id="del">DEL</div>
+      <div onclick="Divisao(); Foco(event)" class="operador" id="divisao">/</div>
+
+      <div onclick="Ler(event)" class="valor" id="valor7">7</div>
+      <div onclick="Ler(event)" class="valor" id="valor8">8</div>
+      <div onclick="Ler(event)" class="valor" id="valor9">9</div>
+      <div onclick="Multiplicacao(); Foco(event)" class="operador" id="multiplicacao">X</div>
+
+      <div onclick="Ler(event)" class="valor" id="valor4">4</div>
+      <div onclick="Ler(event)" class="valor" id="valor5">5</div>
+      <div onclick="Ler(event)" class="valor" id="valor6">6</div>
+      <div onclick="Subtracao(); Foco(event)" class="operador" id="subtracao">-</div>
+
+      <div onclick="Ler(event)" class="valor" id="valor1">1</div>
+      <div onclick="Ler(event)" class="valor" id="valor2">2</div>
+      <div onclick="Ler(event)" class="valor" id="valor3">3</div>
+      <div onclick="Soma(); Foco(event)" class="operador" id="adicao">+</div>
+
+      <div onclick="Matriz()" class="outro" id="negativo">-|a|</div>
+      <div onclick="Ler(event)" class="valor" id="valor0">0</div>
+      <div onclick="Ler(event)" class="outro" id="">,</div>
+
+      <button onclick="Calcular()" type="submit" class="operador" id="submit">=</button>
+    </div>
+
+  </div>
+
+  <script src="./main.js"></script>
+</body>
+</html>
